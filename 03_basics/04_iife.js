@@ -1,6 +1,6 @@
 // Immediately Invoked Function Expressions (IIFE)
 
-
+//USED TO AVOID GLOBAL SCOPE POLLUTION
 (function chai(){
     // named IIFE
     console.log(`DB CONNECTED`);
