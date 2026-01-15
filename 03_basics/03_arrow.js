@@ -9,46 +9,62 @@ const user = {
 
 }
 
-// user.welcomeMessage()
-// user.username = "sam"
-// user.welcomeMessage()
+user.welcomeMessage()
+user.username = "sam"
+user.welcomeMessage()
+op:
+hitesh , welcome to website
+{
+  username: 'hitesh',
+  price: 999,
+  welcomeMessage: [Function: welcomeMessage]
+}
+sam , welcome to website
+{
+  username: 'sam',
+  price: 999,
+  welcomeMessage: [Function: welcomeMessage]
+}
 
-// console.log(this);
+ console.log(this);
 
-// function chai(){
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
+function chai(){
+    let username = "hitesh"
+    console.log(this.username);
+}
 
-// chai()
+chai()
 
-// const chai = function () {
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
+op:undefined
+
+const chai = function () {
+    let username = "hitesh"
+    console.log(this.username);
+}
+chai()
+op:undefined
 
 const chai =  () => {
     let username = "hitesh"
     console.log(this);
 }
+chai()
+op:undefined
 
 
-// chai()
 
-// const addTwo = (num1, num2) => {
-//     return num1 + num2
-// }
+const addTwo = (num1, num2) => {
+    return num1 + num2
+}
 
-// const addTwo = (num1, num2) =>  num1 + num2
+const addTwo = (num1, num2) =>  num1 + num2
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+const addTwo = (num1, num2) => ( num1 + num2 )
 
 const addTwo = (num1, num2) => ({username: "hitesh"})
 
 
 console.log(addTwo(3, 4))
+op:7
 
 
-// const myArray = [2, 5, 3, 7, 8]
-
-// myArray.forEach()
